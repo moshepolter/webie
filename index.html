@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webie</title>
+	<style type="text/css">
+		input{
+			width: 980px;
+			display: inline-flex;
+			justify-content: center;
+			height: 50px;
+			font-size: 45px;
+			align-items: baseline;
+		}
+		input#button{
+			width: 200px;
+			height: 58px;
+			margin-top: 50px !important;
+			margin-left: 500px;
+		}
+		input#search{
+			border-radius: 10px;
+			border:2px solid black;
+			margin-top: 300px;
+			margin-left: 100px;
+		}
+		#links div{
+			background-color: white;
+			float: right;
+			border-radius: 3px;
+			margin-right: 220px;
+			display: block;
+		}
+		#links div:hover{
+			background-color: lightgray;
+			float: right;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		div#links{
+  			display: flex;
+  			align-items: center;
+  			position: absolute;
+		}
+		#links div#netflix{
+			padding: 0 5px 0 5px;
+		}
+		#links div img{
+			display: inline-flex;
+			align-items: center;
+		}
+		#name img{
+			position: absolute;
+			top: 100px;
+			left: 350px;
+		}
+		#links #Youtube{
+			margin-left: 40px;
+		}
+		#links #google{
+			margin-right: 40px;
+		}
+		input#button{
+			border-radius: 10px;
+			border: 3px solid black;
+			box-shadow: 10px 10px 20px black;
+			text-shadow: 2px 2px 4px black;
+		}
+	</style>
+</head>
+<body>
+	<div id="links">
+<div id="Youtube">
+	<img src="chrome-search://ntpicon/size/24@1.5x/https://www.youtube.com/"><br>
+	<a href="youtube.com" target="_blank">YouTube</a>
+</div>
+<div id="amazon" style="margin-left: 100px;">
+	<img src="chrome-search://ntpicon/size/24@1.5x/https://www.amazon.com/"><br>
+	<a href="https://www.amazon.com/" target="_blank">Amazon</a>
+</div>
+<div id="netflix" style="margin-left: 100px;">
+	<img src="chrome-search://ntpicon/size/24@1.5x/https://www.netflix.com/"><br>
+	<a href="https://www.netflix.com/" target="_blank">Netflix</a>
+</div>
+<div id="google" style="margin-left: 100px;">
+	<img src="chrome-search://ntpicon/size/24@1.5x/https://www.google.com/"><br>
+	<a href="https://www.google.com/" target="_blank">Google</a>
+</div>
+</div>
+<div id="name">
+<img src="logo.png">
+</div>
+<div id="search">
+<input type="text" id="search">
+<input type="button" value="Search" id="button" onclick="search()">
+</div>
+<script type="text/javascript">
+	function search(){
+		const search = document.getElementById("search").value;
+		window.open("https://www.google.com/"+search)
+	}
+</script>
+</body>
+</html>
