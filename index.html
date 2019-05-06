@@ -30,10 +30,16 @@
 			border-radius: 3px;
 			margin-right: 120px;
 			display: block;
+			padding: 10px 10px 10px 10px;
 		}
 		#links div:hover{
 			background-color: lightgray;
 			float: right;
+		}
+		#netflix div:hover{
+			background-color: lightgray;
+			float: right;
+			width: 10px;
 		}
 		a{
 			text-decoration: none;
@@ -41,21 +47,33 @@
 			margin-left: 16px;
 		}
 		#amazon a{
+			margin-left: 0px;
+		}
+		#amazon a b{
 			margin-left: 23px;
 		}
 		#netflix a{
+			margin-left: 0px;
+		}
+		#netflix a b{
 			margin-left: 25px;
 		}
 		#google a{
+			margin-left: 0px;
+		}
+		#google a b{
 			margin-left: 25px;
+		}
+		#Youtube a{
+			margin-left: 0px;
+		}
+		#Youtube a b{
+			margin-left: 20px;
 		}
 		div#links{
   			display: flex;
   			align-items: center;
   			position: absolute;
-		}
-		#links div#netflix{
-			padding: 0 5px 0 5px;
 		}
 		#links div img{
 			display: inline-flex;
@@ -84,23 +102,39 @@
 		}
 	</style>
 </head>
-<body><br>
+<body>
 	<div id="links">
 <div id="Youtube" href="https://www.google.com/">
-	<img src="yo.png"><br>
-	<a href="youtube.com" target="_blank">YouTube</a>
+	<a href="youtube.com" target="_blank">
+		<img src="yo.png"><br>
+		<b>
+		YouTube
+		</b>
+	</a>
 </div>
 <div id="amazon" style="margin-left: 100px;" href="https://www.google.com/">
-	<img src="amz.png"><br>
-	<a href="https://www.amazon.com/" target="_blank">Amazon</a>
+	<a href="https://www.amazon.com/" target="_blank">
+		<img src="amz.png"><br>
+		<b>
+		Amazon
+		</b>
+	</a>
 </div>
 <div id="netflix" style="margin-left: 100px;" href="https://www.google.com/">
+	<a href="https://www.netflix.com/" target="_blank">
 	<img src="netflix.png"><br>
-	<a href="https://www.netflix.com/" target="_blank">Netflix</a>
+	<b>
+	Netflix
+	</b>
+	</a>
 </div>
 <div id="google" style="margin-left: 100px;" href="https://www.google.com/">
+	<a href="https://www.google.com/" target="_blank">
 	<img src="google.png"><br>
-	<a href="https://www.google.com/" target="_blank">Google</a>
+	<b>
+	Google
+	</b>
+	</a>
 </div>
 </div>
 <div id="name">
