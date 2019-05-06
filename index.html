@@ -36,6 +36,9 @@
 			background-color: lightgray;
 			float: right;
 		}
+		#links div img:hover{
+			box-shadow: none;
+		}
 		#netflix div:hover{
 			background-color: lightgray;
 			float: right;
@@ -78,6 +81,8 @@
 		#links div img{
 			display: inline-flex;
 			align-items: center;
+			border-radius: 5px;
+			box-shadow: 2px 2px 20px purple;
 		}
 		#name img{
 			position: absolute;
@@ -93,12 +98,17 @@
 		input#button{
 			border-radius: 10px;
 			border: 3px solid black;
-			box-shadow: 10px 10px 20px black;
+			box-shadow: 3px 3px 20px purple;
 			text-shadow: 2px 2px 4px black;
 		}
 		div#links div img{
 			height: 100px;
 			width: 100px;
+		}
+		#search input#search{
+			box-shadow: 2px 2px 20px purple;
+			border-radius: 5px;
+			padding-bottom: 20px;
 		}
 	</style>
 </head>
@@ -144,7 +154,6 @@
 <input type="text" id="search">
 <input type="button" value="Search" id="button" onclick="search()">
 </div>
-<p>&copy; all rights reserved<br> by webiie.com</p>
 <script type="text/javascript">
 	function search(){
 		const search = document.getElementById("search").value;
