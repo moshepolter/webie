@@ -3,114 +3,7 @@
 <head>
 	<title>Webie</title>
 	<link rel="icon" href="icon.png">
-	<style type="text/css">
-		input{
-			width: 980px;
-			display: inline-flex;
-			justify-content: center;
-			height: 50px;
-			font-size: 45px;
-			align-items: baseline;
-		}
-		input#button{
-			width: 200px;
-			height: 58px;
-			margin-top: 50px !important;
-			margin-left: 500px;
-		}
-		input#search{
-			border-radius: 10px;
-			border:2px solid black;
-			margin-top: 350px;
-			margin-left: 100px;
-		}
-		#links div{
-			background-color: white;
-			float: right;
-			border-radius: 3px;
-			margin-right: 120px;
-			display: block;
-			padding: 10px 10px 10px 10px;
-		}
-		#links div:hover{
-			background-color: lightgray;
-			float: right;
-		}
-		#links div img:hover{
-			box-shadow: none;
-		}
-		#netflix div:hover{
-			background-color: lightgray;
-			float: right;
-			width: 10px;
-		}
-		a{
-			text-decoration: none;
-			color: black;
-			margin-left: 16px;
-		}
-		#amazon a{
-			margin-left: 0px;
-		}
-		#amazon a b{
-			margin-left: 23px;
-		}
-		#netflix a{
-			margin-left: 0px;
-		}
-		#netflix a b{
-			margin-left: 25px;
-		}
-		#google a{
-			margin-left: 0px;
-		}
-		#google a b{
-			margin-left: 25px;
-		}
-		#Youtube a{
-			margin-left: 0px;
-		}
-		#Youtube a b{
-			margin-left: 20px;
-		}
-		div#links{
-  			display: flex;
-  			align-items: center;
-  			position: absolute;
-		}
-		#links div img{
-			display: inline-flex;
-			align-items: center;
-			border-radius: 5px;
-			box-shadow: 2px 2px 20px purple;
-		}
-		#name img{
-			position: absolute;
-			top: 150px;
-			left: 350px;
-		}
-		#links #Youtube{
-			margin-left: 90px;
-		}
-		#links #google{
-			margin-right: 40px;
-		}
-		input#button{
-			border-radius: 10px;
-			border: 3px solid black;
-			box-shadow: 3px 3px 20px purple;
-			text-shadow: 2px 2px 4px black;
-		}
-		div#links div img{
-			height: 100px;
-			width: 100px;
-		}
-		#search input#search{
-			box-shadow: 2px 2px 20px purple;
-			border-radius: 5px;
-			padding-bottom: 20px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="indexcss.css">
 </head>
 <body>
 	<div id="links">
@@ -131,7 +24,7 @@
 	</a>
 </div>
 <div id="netflix" style="margin-left: 100px;" href="https://www.google.com/">
-	<a href="https://www.netflix.com/" target="_blank">
+	<a href="https://www.netflix.com/" target="_blank" >
 	<img src="netflix.png"><br>
 	<b>
 	Netflix
@@ -154,11 +47,7 @@
 <input type="text" id="search">
 <input type="button" value="Search" id="button" onclick="search()">
 </div>
-<script type="text/javascript">
-	function search(){
-		const search = document.getElementById("search").value;
-		window.open("https://www.google.com/"+search)
-	}
+<script type="text/javascript" src="indexJavaScript.js">
 </script>
 </body>
 </html>
